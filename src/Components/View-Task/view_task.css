@@ -1,0 +1,59 @@
+.new-task{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h4{
+    color: white;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.title{
+    height: 35px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: #555;
+    margin-bottom: -10px;
+}
+
+.description{
+    height: 150px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    color: #555;
+    padding-top: -50px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-small-green{
+    height: 40px;
+    width: 180px;
+    background-color: #6AB5A5;
+    border-color: white;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-small-pink{
+    height: 40px;
+    width: 180px;
+    background-color: #E05C87;
+    border-color: white;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+}

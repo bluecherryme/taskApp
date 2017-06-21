@@ -1,0 +1,16 @@
+.btn-right{
+    margin-top: 30px;
+}
+
+.view-task-list{
+    background-color: white;
+}
+
+.task-list{
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    margin: 35px auto;
+    border-radius: 20px;
+    overflow:scroll;
+}

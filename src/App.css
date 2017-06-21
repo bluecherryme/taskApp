@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+.App {
+  text-align: center;
+  
+}
+
+.container{
+  height: 700px;
+  min-width: 820px;
+  width: 90vw;
+  margin: 20px auto;
+  background-color: #E0C8D0;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+}
+
+h1{
+  font-family: 'Rock Salt', cursive;
+  color: #E05C87;
+}
+
+.left-side, .right-side{
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-task-container, .view-task-container{
+  height: 50%;
+  border-radius: 20px;
+  background-color: #78CAB9;
+  padding: 10px;
+}
+
+.new-task-container{
+  margin-bottom: 10px;
+}
+
+.view-task-container{
+  margin-top: 10px;
+}
+
+.right-side{
+  padding-left: 20px;
+}
+
+.view-task-list{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #78CAB9;
+  }
