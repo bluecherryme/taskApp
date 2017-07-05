@@ -4,14 +4,14 @@ import './list-item.css';
 
 
 
-export default function ListItem(list, functionDelOrCom){
+export default function ListItem(list, functionDelOrCom, indicator){
         
         return list.map((task,index)=>{
 
             return( 
                 <li key={index} 
                 style={
-                    task.completed
+                    (indicator===false)
                     ?
                     {color:'grey',
                      'backgroundColor':"lightgrey",
@@ -28,9 +28,10 @@ export default function ListItem(list, functionDelOrCom){
                 }
                 
                 >
+              
                 <div className="list-title"><strong>{task.title}</strong></div>
                 <div className="list-description">{task.description}</div>
-                {(!task.completed)
+                {(indicator===true)
                     ?
                     <button className="btn-tiny-green complete"
                         onClick={(event)=>{functionDelOrCom(list[index].title)}}

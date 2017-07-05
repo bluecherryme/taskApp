@@ -13,8 +13,8 @@ export default class ViewTaskList extends Component {
                 </div>
                 <div className="task-list">
                     <ul>
-                        {ListItem(this.props.currentTasks,this.props.completeTask)}
-                        {ListItem(this.props.completedTasks,this.props.deleteTask)}                        
+                        {ListItem(this.props.currentTasks,this.props.completeTask,true)}
+                        {ListItem(this.props.completedTasks,this.props.deleteTask,false)}                        
                     </ul>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import NewTask from './Components/New-Task/new_task';
 import ViewTask from './Components/View-Task/view_task';
 import TaskList from './Components/Task-List/view-task-list';
@@ -45,7 +46,7 @@ class App extends Component {
 
     let copyCurrentTasks = this.state.currentTasks;
     let copyCompletedTasks = this.state.completedTasks;
-    copyCompletedTasks.unshift(copyCurrentTasks.splice(index,1));
+    copyCompletedTasks.unshift(copyCurrentTasks.splice(index,1)[0]);
     this.setState({
       currentTasks: copyCurrentTasks,
       completedTasks : copyCompletedTasks    
@@ -80,4 +81,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);
