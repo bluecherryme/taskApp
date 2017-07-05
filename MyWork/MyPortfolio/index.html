@@ -1,0 +1,176 @@
+<!---Portfolio Page 
+Created by and for Johanna Staedel / bluecherryme 
+a project for FreeCodeAcademy / Second Project 
+commenced on 19 September 2016-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bluecherry!</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="main.css">
+  	<link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+ 	<script src="https://use.fontawesome.com/1120fd588b.js"></script>
+
+</head>
+
+<body>
+
+	<!------         Header   ------>
+
+	<header class= "navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<span class="navbar-brand">bluecherry<span style="color:orange;">!</span></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav nav-pills navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<!------        Home    ------>
+	<div class="container-fluid text-center" id="home">
+		<p class="lead"><span style="color:orange; font-weight:900; font-size:60px; 
+			text-decoration: underline;">WELCOME</span> <br/> <br/> 
+			My name is <span style="color:orange">Johanna</span> and I am an aspiring developer.<br/> 
+			I <span style="color:orange">LOVE</span> to learn new things and I 
+				<span style="color:orange">LOVE</span> to solve problems!</p>
+	</div>	
+	
+	<!------         About   ------>
+	<div class="container text-center well" id="about">
+		<h2>About Me</h2>
+		<div class="col-xs-12 col-sm-4" id="professionally">
+			<span class="glyphicon glyphicon-folder-open"></span>
+			<h4>Professionally</h4>
+			<p>I have worked for nearly 10 years in the production industry in planning and disposition
+			and for the last 6 years I have been working in the legal industry. Whilst I enjoy
+			both, I feel I need a new challenge and programming surely qualifies as that.</p>
+		</div>
+		<div class="col-xs-12 col-sm-4" id="privately">
+			<span class="glyphicon glyphicon-plane"></span>
+			<h4>Privately</h4>
+			<p>As an avid traveller I feel nowhere and everywhere at home! I love to discover 
+			new things, travel to new places, meet new people but I just as much like to hide away and solve 
+			a problem, tinker with my laptop and get lost in some unimportant little detail that doesn't work the way I want it to!
+			I like it neat and tidy and I like to get things done! </p>
+		</div>
+		<div class="col-xs-12 col-sm-4" id="developing">
+			<span class="glyphicon glyphicon-wrench"></span>
+			<h4>Developing</h4> 
+			<p> I am a developing developer. I've started a few times learning Python and never followed through with
+			it for long enough. I am currently learning HTML, CSS and JavaScript but I am planning on having another go with Python.
+			It seems easier every time I start again. It's not work when you're having fun!</p>
+		</div>
+		
+	</div>
+	
+	<!------         Portfolio   ------>
+	<div class="container text-center" id="portfolio" class="text-center">
+	<h2>Portfolio</h2>
+		<p>Here are some of the projects I have worked on so far:</p>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<a target="_blank" href="http://codepen.io/bluecherryme/full/kkbjmm/" class="thumbnail">
+					<img src="http://res.cloudinary.com/daf1a1rzy/image/upload/v1474024376/epicurus11_ugxg4d.jpg" 
+					alt="Epicurus Tribute Page">
+			    </a>
+			    <h6 class="text-center">Epicurus Tribute Page - First Project for FreeCodeCamp</h6>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<a href="#home" class="thumbnail">
+					<img src="http://res.cloudinary.com/daf1a1rzy/image/upload/v1474892627/stockvault-blue-cherries133330_pasx2x.jpg" 
+					alt="Portfolio Page">
+				</a>
+				<h6 class="text-center">Portfolio Page - Second Project for FreeCodeCamp</h6>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<a target="_blank" href="#" class="thumbnail">
+				<img src="http://www.stockvault.net/data/2014/07/13/159902/small.jpg" 
+				alt="third project yet empty">
+				</a>
+				<h6 class="text-center">Third project - still to come</h6>
+			</div>
+		</div>
+	</div>
+	
+	<!------         Contact   ------>
+	<div class="container-fluid" id="contact">
+		<div id="form-wrap">
+			<form>
+				<fieldset>
+					<h2 class="white text-center">Contact Me</h2>
+          			<div class="row">
+          				<div class="labelinput col-xs-12 col-md-offset-2 col-md-4">
+            				<label class="name" for="name"> Name </label>
+              				<input required type="text" name="name"/>
+            			</div>
+            			<div class="labelinput col-xs-12 col-md-4"  id="namemail">	
+              				<label for="email"> Email </label>
+              				<input required type="email" name="email" validate/>
+            			</div>
+            			<div class="labelinput col-xs-12 col-md-offset-2 col-md-8">	
+              				<label for="comments">Message:</label>
+              				<textarea required type="text" name="message">  </textarea>
+            			</div>
+				  	</div>
+				</fieldset>
+				<fieldset class="container">
+          			<div class= "row">
+          				<input id="submit" class="btn btn-info btn-lg col-xs-12 col-md-offset-3 col-md-2" type=submit>
+          				<span class="col-xs-12 col-md-2 text-center" style="font-weight:bold; color:white; margin-top:10px;">OR</span>
+          				<a href="mailto:bluecherryme@gmail.com" class="btn btn-info btn-lg col-xs-12 col-md-2" id="emailMe">
+				      	<span class="glyphicon glyphicon-envelope"></span> Email Me </a>
+          			</div>
+				</fieldset>
+			</form>
+		</div>		
+	</div>
+	
+	<!------         Footer   ------>
+	
+	<footer class="footer text-center">
+      	<div class="container">
+        	<div id="moreofme">
+        		<div class="tooltip-container">
+        			<a target="_blank" href="https://github.com/bluecherryme"><i class="fa fa-github-square"></i></a>
+        			<span class="tooltip-text"> github </span>
+        		</div>
+        		<div class="tooltip-container">
+        			<a target="_blank" href="https://codepen.io/bluecherryme/pens/public/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        			<span class="tooltip-text"> codepen </span>
+        		</div>
+        		<div class="tooltip-container">
+        			<a target="_blank" href="https://www.freecodecamp.com/bluecherryme"><i class="fa fa-fire"></i></a>
+        			<span class="tooltip-text"> Free Code Camp </span>
+        		</div>
+        	</div>
+        		<p></p>
+				<p>This side is using <a title="glyphicons" href="http://glyphicons.com/">glyphicons</a>.</p>
+				<p>Copyright bluecherry! &copy2016</p>
+      	 </div>
+    </footer>
+	
+</body>
+</html>
+
+

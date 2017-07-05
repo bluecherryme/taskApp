@@ -1,0 +1,231 @@
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+	font-size: 20px; 
+	padding-top: 60px;
+	}
+
+p {
+	font-family: 'David Libre', serif;
+	}
+
+h2 {
+	text-decoration: underline; 
+	padding: 20px; 
+	font-weight: bold;
+	}
+
+h4 {
+	font-weight: 
+	bold;
+	}
+
+/* ----- Navbar ----------------------------------*/
+
+.navbar-collapse {
+	padding-top: 20px; 
+	font-weight: 700; 
+	font-size: 18px;
+	}
+
+.navbar-default .navbar-nav>li>a {
+	color: #777;
+	}
+								
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: #0C255C;
+	}
+
+a:hover {
+	color:white !important;
+	}
+
+.navbar-brand {
+	margin: 20px auto auto 20px; 
+	color:#0C255C !important; 
+	font-size: 30px; 
+	font-weight:700;
+	}
+
+/* ----- Home ----------------------------------*/
+
+#home {
+	min-height:500px; 
+	background-color: blue; 
+	background-image: url("http://res.cloudinary.com/daf1a1rzy/image/upload/v1474892627/stockvault-blue-cherries133330_pasx2x.jpg");
+	background-size: cover;
+	}
+
+.lead {
+	font-weight: 800; 
+	font-size:2.5em; 
+	color: #eee; 
+	max-width: 1200px;
+	min-height: 400px;
+	margin: 50px auto;
+	background-color: rgba(3,7,16,0.4); 
+	padding: 70px 20px;
+	}
+	
+/* ----- About ----------------------------------*/
+
+.well {
+	margin-top: 20px;
+	}
+
+#about {
+	padding-top: 40px; 
+	padding-bottom: 60px;
+	}
+
+#about p {
+	font-size: 15px;
+	}
+
+#about h2 {
+	padding-bottom: 25px;
+	}
+
+#about .glyphicon {
+	font-size: 30px; 
+	color: orange;
+	}
+	
+/* ----- Portfolio ----------------------------------*/
+
+#portfolio {
+	padding-top: 50px; 
+	padding-bottom: 40px;
+	}
+
+#portfolio h2 {
+	padding: 15px;
+	}
+
+.thumbnail {
+	border-color:orange;
+	}
+	
+img:hover{
+	opacity: 0.8;
+	}
+
+/* ----- Contact ----------------------------------*/
+
+#contact {
+	background-color: #0C255C; 
+	min-height: 400px;
+	}
+
+.white,
+fieldset label{
+	color: white;
+	}
+
+h2.white{
+  margin-top: 30px;
+}
+	
+.labelinput label,
+.labelinput input{
+	display: block;
+	}
+
+input,
+textarea{
+  width: 100%;
+}
+
+#namemail{
+  margin-bottom: 20px;
+  }
+
+textarea{
+  margin-bottom: 20px;
+}
+
+#submit,
+#emailMe{
+  color: white;
+  font-weight: 800;
+  background-color: #FF8700;
+  border-color: #FF8700;
+  transition: 0.4s;
+  margin-bottom: 60px;
+ }
+
+#submit:hover,
+#emailMe:hover{
+  background-color: #FA0;
+  border-color: #FA0;
+}
+
+
+/* ----- Footer ----------------------------------*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 150px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 150px;
+  background-color: #F5F5F5;
+  color: #444;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a:hover{
+	color:orange !important;
+	}
+
+#moreofme a {
+	padding: 8px; 
+	font-size: 25px; 
+	color:#0C255C;
+	display: block;
+	}
+
+.tooltip-container {
+	position: relative; 
+	display: inline-block;
+	}
+
+.tooltip-text {
+	position: absolute; 
+	bottom: 80%; 
+	left: -80px; 
+	visibility: hidden; 
+	z-index: 1; 
+	font-size:80%; 
+	width: 200px; 
+	color: orange;
+	}
+
+.tooltip-container:hover .tooltip-text {
+	visibility: visible;
+	}
+
+
+
+
+
+
+
+
+
+
+
+

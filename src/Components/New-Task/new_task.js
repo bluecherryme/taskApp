@@ -7,6 +7,7 @@ export default class NewTask extends Component{
         super();
 
         this.state = {
+            id : 0,
             title : '',
             description : '',
             completed:false
@@ -16,7 +17,6 @@ export default class NewTask extends Component{
         this.handleUpdateDescription = this.handleUpdateDescription.bind(this);
         this.clearInput = this.clearInput.bind(this);
         this.submitAndClearInput = this.submitAndClearInput.bind(this);
-        this.handleComplete = this.handleComplete.bind(this);
     }
 
     handleUpdateTitle(event){
@@ -29,12 +29,6 @@ export default class NewTask extends Component{
     handleUpdateDescription(event){
         this.setState({
             description : event.target.value
-        })
-    }
-
-    handleComplete(event){
-        this.setState({
-            completed:true
         })
     }
 

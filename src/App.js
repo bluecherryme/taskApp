@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {addTask, completeTask, deleteTask} from './reducer';
 import NewTask from './Components/New-Task/new_task';
 import ViewTask from './Components/View-Task/view_task';
 import TaskList from './Components/Task-List/view-task-list';
@@ -9,48 +10,28 @@ class App extends Component {
   constructor(){
     super();
 
-    this.state = {
-      currentTasks : [{title:'finish app', description:'get on with it', completed: false}],
-      completedTasks : [{title:'first', description:'not enough', completed: true}]
-    }
+    this.state = {task:{}};
   
-  this.addTask = this.addTask.bind(this);
-  this.deleteTask = this.deleteTask.bind(this);
-  this.completeTask = this.completeTask.bind(this);
+    this.handleAddTask = this.handleAddTask.bind(this);
+    this.handleDeleteTask = this.handleDeleteTask.bind(this);
+    this.handleCompleteTask = this.handleCompleteTask.bind(this);
+    this.handleView = this.handleView.bind(this);
   }
 
-  addTask(task){
-    let taskListCopy = this.state.currentTasks;
-    taskListCopy.push(task);
-    this.setState({
-      currentTasks : taskListCopy
-    })
+  handleAddTask(task){
+    this.props.addTask(task);
   }
 
-  deleteTask(title){
-    let index = this.state.completedTasks.findIndex(task=>{
-      return task.title === title;
-    });
-
-    let copyCompletedTasks = this.state.completedTasks;
-    copyCompletedTasks.splice(index,1);
-    this.setState({
-      completedTasks : copyCompletedTasks
-    })
+  handleDeleteTask(task){
+    this.props.deleteTask(task);
   }
 
-  completeTask(title){
-    let index = this.state.currentTasks.findIndex(task=>{
-      return task.title === title;
-    });
+  handleCompleteTask(task){
+    this.props.completeTask(task);
+  }
 
-    let copyCurrentTasks = this.state.currentTasks;
-    let copyCompletedTasks = this.state.completedTasks;
-    copyCompletedTasks.unshift(copyCurrentTasks.splice(index,1)[0]);
-    this.setState({
-      currentTasks: copyCurrentTasks,
-      completedTasks : copyCompletedTasks    
-    })
+  handleView(task){
+    this.setState({task:task});    
   }
 
   render() {
@@ -60,18 +41,20 @@ class App extends Component {
         <div className="container">     {/*main container*/}
           <div className="left-side">
             <div className="new-task-container">
-              <NewTask clickHandler={this.addTask} />
+              <NewTask clickHandler={this.handleAddTask} />
             </div>
             <div className="view-task-container">
-              
+              <ViewTask
+              task={this.state.task}
+               completeTask={this.handleCompleteTask} deleteTask={this.handleDeleteTask}/>
             </div>
           </div>
           <div className="right-side">
             <div className="view-task-list">
-              <TaskList currentTasks={this.state.currentTasks}
-              completedTasks={this.state.completedTasks} 
-              deleteTask={this.deleteTask}
-              completeTask={this.completeTask}
+              <TaskList currentTasks={this.props.currentTasks}
+              completedTasks={this.props.completedTasks} 
+              completeTask={this.handleCompleteTask} deleteTask={this.handleDeleteTask}
+              handleView={this.handleView}
               />
             </div>
           </div>
@@ -81,4 +64,11 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+const mapStateToProps = (state) => {
+  return {
+    currentTasks: state.tasks,
+    completedTasks: state.completedTasks
+  }
+}
+
+export default connect(mapStateToProps, {addTask, completeTask, deleteTask})(App);

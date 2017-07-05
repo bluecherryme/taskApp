@@ -1,0 +1,77 @@
+html{
+    margin-top: -25px; 
+}
+
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+	font-size: 1em;    
+}
+
+/*  ---------------HEADER ----------------*/
+
+header {
+    background-image: url(pics/riverEveningSun.jpg);
+    background-size: cover;
+    color: white;
+    height: 600px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#welcome{
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    border: 7px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: welcome 2s forwards;
+    background-color: rgba(3,7,16,0.4);
+    transition: 0.3s;
+    
+    
+}
+
+#welcome:hover{
+    color:#651D69;
+    border-color: #651D69;
+    background-color: rgba(256,256,256,0.5);
+}
+
+@keyframes welcome {
+    from {transform:scale(1;)}
+    to {transform:scale(2.8);}
+}
+
+#logo {
+    font-weight: 900
+        
+}
+@media (max-width: 600px){
+    @keyframes welcome {
+    from {transform:scale(1;)}
+    to {transform:scale(1.2);}
+    }
+}
+
+/*------------------Intro -------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro {
+    height: 2000px;
+}

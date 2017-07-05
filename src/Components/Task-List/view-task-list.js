@@ -4,7 +4,6 @@ import './view-task-list.css';
 
 export default class ViewTaskList extends Component {
     render(){
-        
         return(
             <div className='view-task-list'>
                 <div className="buttons-container btn-right">
@@ -13,8 +12,11 @@ export default class ViewTaskList extends Component {
                 </div>
                 <div className="task-list">
                     <ul>
-                        {ListItem(this.props.currentTasks,this.props.completeTask,true)}
-                        {ListItem(this.props.completedTasks,this.props.deleteTask,false)}                        
+                        {ListItem(this.props.currentTasks,this.props.completeTask, 
+                            this.props.handleView)}
+                    </ul>
+                    <ul>
+                        {ListItem(this.props.completedTasks,this.props.deleteTask)}                        
                     </ul>
                 </div>
             </div>

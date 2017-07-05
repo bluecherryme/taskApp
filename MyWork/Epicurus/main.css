@@ -1,0 +1,48 @@
+body{margin: 0; padding: 0; background-color: #1a1a1a; color: white; 
+     font-family: "Times New Roman", Times, serif; font-size:20px;}
+
+a {color: #447FB1; text-decoration: none;}
+
+a:hover{color: red; text-decoration: underline;}
+
+ul {list-style: none; padding: 0; margin: 0;}
+
+h1 {text-align: center; font-size: 50px; color:white;}
+
+h5 {font-size: 20px; text-align: center; color:white;}
+
+h4 {font-size: 30px; text-align: center; font-weight: bold;}
+
+header{min-height: 400px; max-width: auto; margin: -20px auto 0 auto;
+			 padding: 125px 100px; overflow: hidden;}
+			 
+.header-container {float: right;}
+
+.image-left{float:left; height: auto; max-width: 100%; border: 6px double white; 
+              padding: 5px;}
+
+#Epicurus{margin-top:120px;}
+
+.his-life, .quotes{background-color:#447FB1; min-height:700px; width: auto; overflow:hidden;}
+
+.his-life-text{max-width:500px; height:auto; float:left; margin-top:50px 50px auto 50px;}
+
+#temple{float:left; height: auto; max-width: 45%; border: 6px double white; 
+				margin-left:70px; margin-top: 140px;}
+
+.his-life-text{text-align: left; margin: 110px auto auto 101px; font-size: 22px;}
+
+.his-teachings {min-height:700px; width: auto; overflow:hidden; font-weight: 700;}
+
+.his-teachings h4 {text-align: left;}
+
+.his-teachings-text {max-width: 500px; margin:100px auto auto auto; 
+                    border-bottom: 6px double white; padding-bottom: 40px;}
+
+.quotes{text-align:center; padding-top: 50px; padding-bottom:50px;}
+
+.quotes p{font-weight: 700}
+
+.quotes img {margin: 20px auto;}
+
+footer {min-height: 200px; width: auto; overflow:hidden; padding-top:20px;}
